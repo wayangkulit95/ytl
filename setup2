@@ -1,0 +1,35 @@
+# 2. Create a Node.js project (package.json)
+echo "Creating package.json..."
+npm init -y
+
+# Install project dependencies
+echo "Installing required dependencies..."
+npm install express sqlite3 fluent-ffmpeg
+
+# 3. Create 'output' directory for HLS files if it doesn't exist
+echo "Creating 'output' directory for HLS files..."
+mkdir -p output
+
+# 4. Set up SQLite database and tables
+echo "Setting up SQLite database..."
+sqlite3 streams.db "CREATE TABLE IF NOT EXISTS streams (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  namelive TEXT NOT NULL,
+  url TEXT NOT NULL,
+  playlist TEXT NOT NULL,
+  segment_pattern TEXT NOT NULL
+);"
+
+# 5. Ensure necessary file permissions
+echo "Ensuring correct file permissions..."
+chmod -R 755 .
+chmod -R 777 output
+
+# 6. Start the app
+echo "Starting the app..."
+node app.js
+
+# Display message with next steps
+echo "Setup completed successfully!"
+echo "The application is now running. To stop the app, use the following command:"
+echo "  - To stop the app: Ctrl + C"
