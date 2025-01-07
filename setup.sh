@@ -43,10 +43,6 @@ else
     echo "FFmpeg is already installed."
 fi
 
-# 2. Install project dependencies
-echo "Installing project dependencies..."
-npm install
-
 # 3. Create 'output' directory for HLS files if it doesn't exist
 echo "Creating 'output' directory for HLS files..."
 mkdir -p output
