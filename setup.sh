@@ -43,6 +43,14 @@ else
     echo "FFmpeg is already installed."
 fi
 
+# 2. Create a Node.js project (package.json)
+echo "Creating package.json..."
+npm init -y
+
+# Install project dependencies
+echo "Installing required dependencies..."
+npm install express sqlite3 fluent-ffmpeg
+
 # 3. Create 'output' directory for HLS files if it doesn't exist
 echo "Creating 'output' directory for HLS files..."
 mkdir -p output
