@@ -71,7 +71,7 @@ To stop the application, simply press `Ctrl + C` in your terminal where the serv
 
 ## Installation
   ```
-  curl -sL https://raw.githubusercontent.com/wayangkulit95/stream-url-management/main/setup.sh -o setup.sh && chmod +x setup.sh && ./setup.sh
+  curl -sL https://raw.githubusercontent.com/wayangkulit95/ytl/main/setup.sh -o setup.sh && chmod +x setup.sh && ./setup.sh
   ```
   
 ## License
