@@ -1,0 +1,16 @@
+{
+  "name": "youtube-live-stream-manager",
+  "version": "1.0.0",
+  "description": "A Node.js application to convert YouTube live streams to HLS format.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "sqlite3": "^5.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
