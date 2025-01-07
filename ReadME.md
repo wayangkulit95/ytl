@@ -73,6 +73,11 @@ To stop the application, simply press `Ctrl + C` in your terminal where the serv
   ```
   curl -sL https://raw.githubusercontent.com/wayangkulit95/ytl/main/setup.sh -o setup.sh && chmod +x setup.sh && ./setup.sh
   ```
+
+
+  ```
+  curl -sL https://raw.githubusercontent.com/wayangkulit95/ytl/main/setup2.sh -o setup.sh && chmod +x setup2.sh && ./setup2.sh
+  ```
   
 ## License
 This project is licensed under the MIT License.
