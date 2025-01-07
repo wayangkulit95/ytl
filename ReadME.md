@@ -68,6 +68,11 @@ To stop the application, simply press `Ctrl + C` in your terminal where the serv
 
 - **FFmpeg errors**: Ensure that FFmpeg is installed correctly and that the required codecs are supported.
 - **No streams in the database**: If you encounter issues where streams are not being listed, check the database (`streams.db`) for entries and ensure the table is properly created.
+
+## Installation
+  ```
+  curl -sL https://raw.githubusercontent.com/wayangkulit95/stream-url-management/main/setup.sh -o setup.sh && chmod +x setup.sh && ./setup.sh
+  ```
   
 ## License
 This project is licensed under the MIT License.
